@@ -10,8 +10,10 @@
 			type="image/x-icon"
 		/>
 		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="assets/css/bootstrap.css" />
@@ -246,7 +248,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 mb-3">
 							<div class="box">
 								<img src="assets/images/recycle/cable.jpg" class="card-img" />
 								<h4>Cable Recycling</h4>
@@ -254,6 +256,16 @@
 									Cable recycling is an essential process aimed at recovering
 									valuable materials from obsolete or surplus cables,
 									particulary copper and alluminium
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="box">
+								<img src="assets/images/recycle/toxic.jpg" class="card-img" />
+								<h4>Chemical Recycling</h4>
+								<p>
+									From chemical assessment, packing and collection, through to
+									treatment or final disposal,
 								</p>
 							</div>
 						</div>
@@ -456,8 +468,91 @@
 				</div>
 			</section>
 
+			<!-- Chemical Waste  -->
+			<section class="py-3">
+				<div class="container">
+					<div class="">
+						<span class="badge badge-danger p-2 mb-2"
+							>CHILAMBO-CHEM ENVIRONMENTAL</span
+						>
+						<h3 class="font-weight-bold">Chemical Waste Disposal</h3>
+						<p></p>
+					</div>
+					<div class="row mt-2">
+						<div class="col-md-4">
+							<img src="assets/images/chemical.png" alt="" class="img-fluid" />
+						</div>
+						<div class="col-md-8">
+							<p>
+								Ensuring the proper collection and disposal of chemical waste is
+								crucial for safeguarding public health and the environment.
+								Organisations bear a legal responsibility to uphold diligent
+								chemical waste management practices in line with government
+								regulations. Chilambo Environmental is your trusted service
+								provider, offering a secure, sustainable, and compliant service
+								for the handling and disposal of hazardous waste.
+							</p>
+
+							<p>
+								We can provide sustainable solutions that help companies improve
+								their environmental credentials.
+
+								<br />
+
+								<span class="badge badge-danger p-2 mt-1"
+									>The products include:</span
+								>
+							</p>
+
+							<div class="mt-2 owl-chem owl-carousel owl-theme">
+								<div class="badge badge-danger p-2 d-flex">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i>
+									Acidic and alkaline materials
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Lubricants
+								</div>
+
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Fluorescent
+									tubes
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Flammable
+									waste
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Adhesives
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Waste oils
+									and rags
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Industrial
+									chemicals
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Laboratory
+									waste
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Garage
+									clearance waste
+								</div>
+								<div class="p-2 badge badge-danger">
+									<i class="fa fa-arrow-alt-circle-right pr-1"></i> Solvents
+								</div>
+							</div>
+
+							<a href="#" class="btn btn-dark btn-sm">Contact Us</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Waste Recycle Process  -->
-			<section class="py-2">
+			<section class="py-3">
 				<div class="container">
 					<span class="badge badge-danger p-2 mb-2">WASTE RECYCLE PROCESS</span>
 					<h3 class="font-weight-bold">The Process Goes Way Behond</h3>
@@ -521,7 +616,7 @@
 					<span class="badge badge-danger p-2 mb-2">OUR PARTNERS</span>
 					<h3 class="font-weight-bold">People We Work With</h3>
 
-					<div class="owl-carousel owl-theme mt-3">
+					<div class="owl-client owl-carousel owl-theme mt-3">
 						<div class="item">
 							<img src="assets/images/partners/gamma.jpg" class="img-fluid" />
 						</div>
@@ -740,12 +835,29 @@
 		<script src="assets/js/lightbox-plus-jquery.min.js"></script>
 		<script src="assets/js/owl.carousel.js"></script>
 		<script>
-			$(".owl-carousel").owlCarousel({
+			$(".owl-client").owlCarousel({
+				autoPlay: true,
 				loop: true,
 				margin: 10,
 				responsive: {
 					0: {
 						items: 4,
+					},
+				},
+			});
+
+			$(".owl-chem").owlCarousel({
+				autoPlay: true,
+				smartSpeed: 800,
+				autoWidth: true,
+				dots: true,
+				loop: true,
+				animateOut: "slideOutDown",
+				animateIn: "flixInX",
+				margin: 5,
+				responsive: {
+					0: {
+						items: 3,
 					},
 				},
 			});
