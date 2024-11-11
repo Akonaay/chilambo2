@@ -410,3 +410,7 @@ body {
   transform: translateY(-5px); }
 
 /*-- //move top --*/
+
+.icon-link div{
+  margin-bottom: 10px;
+}
