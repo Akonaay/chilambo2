@@ -1124,10 +1124,13 @@ body {
 /* END SERVICES  */
 
 /* CONTACT US PAGE  */
-.map-iframe iframe {
+.map iframe {
+  border: none;
+  width: 100%;
+  min-height: 400px;
+  display: block;
   -webkit-filter: var(--iframe-filter);
   -moz-filter: var(--iframe-filter);
   -ms-filter: var(--iframe-filter);
   -o-filter: var(--iframe-filter);
-  filter: var(--iframe-filter);
-}
+  filter: var(--iframe-filter); }
