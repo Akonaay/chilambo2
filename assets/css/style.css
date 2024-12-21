@@ -1134,3 +1134,21 @@ body {
   -ms-filter: var(--iframe-filter);
   -o-filter: var(--iframe-filter);
   filter: var(--iframe-filter); }
+
+  /* Home | Pillar  */
+.pillar{
+  padding: 10px;
+  border: 2px solid;
+}
+
+.pillar h5{
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #1da1f2;
+}
+
+.pillar p{
+  /* border-left: 5px solid ;
+  padding-left: 15px; */
+}
