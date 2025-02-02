@@ -1148,7 +1148,9 @@ body {
   color: #1da1f2;
 }
 
-.pillar p{
-  /* border-left: 5px solid ;
-  padding-left: 15px; */
+.service-body{
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  color: white;
 }
