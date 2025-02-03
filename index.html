@@ -480,6 +480,7 @@
 					<div class="container">
 						<span class="badge badge-danger p-2 mb-2">OUR PARTNERS</span>
 
+						<!-- Client List  -->
 						<div class="owl-client owl-carousel owl-theme mt-3">
 							<div class="item">
 								<img
@@ -524,83 +525,81 @@
 
 			<!-- Map & Contact Form  -->
 			<section class="py-2" id="contactus">
-				<div class="mt-2">
-					<div class="container">
-						<span class="badge badge-danger p-2 mb-3">CONTACT US</span>
-						<div class="row">
-							<!-- Map  -->
-							<div class="col-md-6 mb-3">
-								<div class="map rounded">
-									<iframe
-										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.2887382210015!2d39.028827374996474!3d-6.912216293087269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c49ec4b000001%3A0xcbb268a2ed7659e6!2sCHILAMBO%20GENERAL%20TRADE%20COMPANY%20LIMITED!5e1!3m2!1sen!2stz!4v1731662744687!5m2!1sen!2stz"
-										width="1080"
-										height="350"
-										style="border: 0"
-										allowfullscreen=""
-										loading="lazy"
-										referrerpolicy="no-referrer-when-downgrade"
-										class="map-responsive"
-									></iframe>
-								</div>
+				<div class="container">
+					<span class="badge badge-danger p-2 mb-3">CONTACT US</span>
+					<div class="row">
+						<!-- Map  -->
+						<div class="col-md-6 mb-3">
+							<div class="map rounded">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.2887382210015!2d39.028827374996474!3d-6.912216293087269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c49ec4b000001%3A0xcbb268a2ed7659e6!2sCHILAMBO%20GENERAL%20TRADE%20COMPANY%20LIMITED!5e1!3m2!1sen!2stz!4v1731662744687!5m2!1sen!2stz"
+									width="1080"
+									height="350"
+									style="border: 0"
+									allowfullscreen=""
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"
+									class="map-responsive"
+								></iframe>
 							</div>
+						</div>
 
-							<!-- Contact Form  -->
-							<div class="col-md-6">
-								<div class="title-content-1 mb-3">
-									<h3
-										class="text-capitalize font-weight-light pl-2"
-										style="border-left: 3px solid blue"
-									>
-										Get in Touch with Us
-									</h3>
-								</div>
-								<form action="assets/contact.php">
-									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label for="inputName">Name</label>
-											<input
-												type="text"
-												class="form-control"
-												placeholder="Your Name"
-												name="w3lName"
-											/>
-										</div>
-										<div class="form-group col-md-6">
-											<label for="inputName2">Company Name</label>
-											<input
-												type="text"
-												class="form-control"
-												placeholder="Company Name"
-												name="w3lCompany"
-											/>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="inputEmail4">Email</label>
+						<!-- Contact Form  -->
+						<div class="col-md-6">
+							<div class="title-content-1 mb-3">
+								<h3
+									class="text-capitalize font-weight-light pl-2"
+									style="border-left: 3px solid blue"
+								>
+									Get in Touch with Us
+								</h3>
+							</div>
+							<form action="assets/contact.php">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputName">Name</label>
 										<input
-											type="email"
+											type="text"
 											class="form-control"
-											id="inputEmail4"
-											placeholder="Email"
-											name="w3lSender"
+											placeholder="Your Name"
+											name="w3lName"
 										/>
 									</div>
-
-									<div class="form-group">
-										<label for="exampleFormControlTextarea1">Message</label>
-										<textarea
+									<div class="form-group col-md-6">
+										<label for="inputName2">Company Name</label>
+										<input
+											type="text"
 											class="form-control"
-											id="exampleFormControlTextarea1"
-											rows="3"
-											name="w3lMessage"
-										></textarea>
+											placeholder="Company Name"
+											name="w3lCompany"
+										/>
 									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail4">Email</label>
+									<input
+										type="email"
+										class="form-control"
+										id="inputEmail4"
+										placeholder="Email"
+										name="w3lSender"
+									/>
+								</div>
 
-									<button type="submit" class="btn btn-md btn-primary">
-										Submit
-									</button>
-								</form>
-							</div>
+								<div class="form-group">
+									<label for="exampleFormControlTextarea1">Message</label>
+									<textarea
+										class="form-control"
+										id="exampleFormControlTextarea1"
+										rows="3"
+										name="w3lMessage"
+									></textarea>
+								</div>
+
+								<button type="submit" class="btn btn-md btn-primary">
+									Submit
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -764,12 +763,13 @@
 				autoPlay: true,
 				loop: true,
 				margin: 10,
+				nav: true,
 				responsive: {
 					0: {
-						items: 5,
+						items: 3,
 					},
 					1000: {
-						items: 6,
+						items: 5,
 					},
 				},
 			});

@@ -1154,3 +1154,36 @@ body {
   left: 20%;
   color: white;
 }
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+z-index: 1;
+width: 30px;
+height: 30px;
+background-color: #f12a2a;
+border-radius: 50%;
+position: absolute;
+top: 30%;
+transform: translatey(-50%);
+}
+
+.owl-nav button span {
+font-size: 20px;
+height: 100%;
+display: block;
+width: 100%;
+color: white;
+}
+.owl-carousel .owl-nav button.owl-prev {
+left: 0;
+}
+.owl-carousel .owl-nav button.owl-next {
+right: 0;
+}
+.owl-carousel .owl-nav {
+margin: 0;
+}
+.btn-wrap {
+text-align: center;
+width: 100%;
+}
